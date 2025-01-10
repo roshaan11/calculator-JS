@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title >
+    <link rel="stylesheet" href="index.css">    
+</head>
+<body>
+    <div class="calulator-main">
+        <div class="top-section">
+            <div class="menu">
+                <img src="more.png" alt="">
+                <p>Standard</p>
+                <img src="resize.png" alt="">
+            </div>
+            <div class="time">
+                <img src="time-left.png" alt="">
+            </div>
+        </div>
+        <div class="input-section">
+            <input id="display" type="text" placeholder="0">
+        </div>
+        <div class="numbers-section">
+            <div class="box01">
+                <button onclick="Display('%')" class="box">%</button>
+                <button onclick=""  class="box">CE<button>
+                <button onclick="clear()" class="box">C</button>
+                <button onclick="remove()"class="box chng"><img src="delete.png" alt=""></button>
+            </div>
+            <div class="box02">
+                <button onclick="Display('7')" class="box">7</button>
+                <button onclick="Display('8')" class="box">8</button>
+                <button onclick="Display('9')"class="box">9</button>
+                <button onclick="Display('/')"class="box">/</button>
+            </div>
+            <div class="box03">
+                <button onclick="Display('4')" class="box">4</button>
+                <button onclick="Display('5')" class="box">5</button>
+                <button onclick="Display('6')" class="box">6</button>
+                <button onclick="Display('*')"class="box">*</button>
+            </div>
+            <div class="box04">
+                <button onclick="Display('1')" class="box">1</button>
+                <button onclick="Display('2')" class="box">2</button>
+                <button onclick="Display('3')"class="box">3</button>
+                <button onclick="Display('+')"class="box">+</button>
+            </div>
+            <div class="box05">
+                <button onclick="Display('.')"class="box">.</button>
+                <button onclick="Display('0')" class="box">0</button>
+                <button onclick="calculate()"class="box">=</button>
+                <button onclick="Display('-')"class="box">-</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
